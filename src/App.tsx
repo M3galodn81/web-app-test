@@ -2,6 +2,7 @@
 import React from 'react'
 import Navigation from './components/Navigation'
 import './App.scss'
+import Agents from './components/valorant/Agents'
 
 // https://valorant-api.com/v1/agents
 
@@ -29,7 +30,7 @@ function App() {
         </div>
 
         <div className="container">
-          
+          <Agents />
           <div className="title"></div>
           
           <div className="picture"></div>
