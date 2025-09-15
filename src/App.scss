@@ -1,0 +1,63 @@
+$main: #884654;
+$primary: #784662;
+$secondary: #634869;
+// $main: #4d4a69,
+// $main: #3a4a63,
+// $main: #2f4858,
+$text: #f0ebe3;
+
+
+body{
+    // background-color: $main;
+    min-height: 100vh;
+    min-width: 100vw;
+    color: $text;
+    font-family: sans-serif; 
+}
+
+.hero {
+  background-color: $secondary;
+  color: $text;
+  text-align: center;
+  min-width: 100vw;
+  min-height: calc(100vh - 70px); // subtract nav height
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main-title{
+    // text-align: center;
+    font-size: 5vw;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between; // pushes left + right apart
+  align-items: center;           // vertically centers
+  padding: 1rem;
+  background-color: $primary;    // optional
+  color: $text;
+  z-index: 999;    
+  height: 70px;         // ensures it's on top of other content
+
+
+  .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  div {
+    display: flex;
+    gap: 1rem; // spacing between items
+  }
+
+  ol {
+    list-style: none; // removes numbering
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+}
